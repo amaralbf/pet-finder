@@ -18,3 +18,11 @@ skip-string-normalization = true
 
 [tool.isort]
 profile = 'black'
+
+
+[tool.coverage.run]
+command_line = "-m pytest"
+source = ["app"]
+
+[tool.coverage.report]
+show_missing = true
